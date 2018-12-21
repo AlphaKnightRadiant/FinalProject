@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title> Alberto Pacheco: Software Developer </title>
+	<link href= "{% static "css/AlphaDesign1.css" %}" rel="stylesheet"/>
+</head>
+
+<body>
+
+<!-- Top Bar Navigation -->
+<header class="header">
+
+		<div class="logo"> <a href= "/"><img src="{% static "images/delta.png"%}" width="50" height="50"></a> </div>
+
+	<span class="right">
+			<strong>
+			<div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="my_centered_buttons">
+				<a class="a2a_button_facebook"></a>
+				<a class="a2a_button_twitter"></a>
+				<a class="a2a_button_google_plus"></a>
+				<a class="a2a_button_pinterest"></a>
+				<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			</div>
+			<script async src="https://static.addtoany.com/menu/page.js"></script>
+			</strong>
+	</span>
+
+</header>
+<!-- / Top bar navigation -->
+
+<div id="container">
+<h1>Are you Free This Week?</h1>
+</div>
+
+<div class="poll-container"
+
+  {{form}}
+
+</div>
+
+
+</body>
+</html>

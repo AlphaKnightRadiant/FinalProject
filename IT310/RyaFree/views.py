@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import forms
 # Create your views here.
 
 def index(request):
@@ -12,3 +13,10 @@ def help(request):
 
 def Services(request):
     return render (request,'RyaFree/Services.html')
+
+def Poll(request):
+    return render (request,'RyaFree/poll.html')
+
+def form_name_view(request):
+    form = forms.FreeForm()
+    return render(request,'RyaFree/poll.html',{'form':form})
