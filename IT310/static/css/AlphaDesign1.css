@@ -1,0 +1,278 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	background: #fff;
+	overflow: hidden;
+	position: absolute;
+}
+h1 {
+    left: 0;
+    line-height: 130px;
+    margin-top: -100px;
+    text-align: center;
+	font-size: 50px;
+    top: 50%;
+    width: 100%;
+	text-wrap: none;
+	font-family: Antic;
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+h2 {
+    position: absolute;
+	left: 0;
+    line-height: 210px;
+    margin-top: -100px;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+	font-size: .99em;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+h3 {
+    left: 0;
+    line-height: 900px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+	font-family: Cursive;
+	z-axis: -1;
+}
+#container{
+	margin-top: 60px;
+}
+
+.button-container{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position:absolute;
+	align-items:center;
+	justify-content: center;
+}
+
+.ghost-button {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  padding: 8px;
+  color: #000;
+  border-radius: 50px;
+  border: 1px solid #000;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+#button1 {
+    background: #27adf1;
+    color: white;
+    border: none;
+	width: 120px;
+    padding: .8em 1em;
+    text-align: center;
+	margin-left: .2em;
+    transition: .5s ease;
+	border-radius: 50px;
+	text-decoration: none;
+	margin-right: 25px;
+}
+#button2 {
+    border: 1px solid #27adf1;
+    color: #27adf1;
+    background: white;
+    padding: .8em 1em;
+    width: 120px;
+	margin-left: 20px;
+    text-align: center;
+    transition: .5s ease;
+	border-radius: 50px;
+	text-decoration: none;
+}
+#button1:hover {
+	border: 1px solid #27adf1;
+	color: #27adf1;
+	background: white;
+}
+#button2:hover {
+	background: #27adf1;
+	color: white;
+
+
+}
+#leftnav{
+	height:70px;
+	background: #3b3b3b;
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	z-index: 5;
+	width: 100%;
+	font-size: 11px;
+}
+
+#leftnav h1{
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0,0,3);
+	padding: 6px;
+}
+#leftnav a{
+	text-decoration: none;
+	color: white;
+}
+
+#navigation {
+	margin-top: 90px;
+	margin-left:-40px;
+	width: 220px;
+	display:block;
+	list-style:none;
+	z-index: 3;
+}
+
+
+#navigation a{
+
+	color: black;
+	display: block;
+	background: white;
+	border-radius: 0px 50px 50px 0px;
+	border: 2px solid #000;
+	line-height: 50px;
+	padding: 0px 20px;
+	margin-bottom: 20px;
+	text-decoration: bold;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	font-size: 18px;
+	font-family: Verdana, Arial;
+	font-weight: bold;
+
+}
+#navigation a:hover {
+	background: #27adf1;
+	color: white;
+}
+/*div.vertical-line{
+      width: 1px;
+      z-index: 2;
+	  left: 230px;
+	  background-color: black;
+      height: 100%; /* Override in-line if you want specific height.
+      position: absolute; /* Causes the line to float to left of content.
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+
+.logo {
+	float: left;
+	display: block;
+	padding: 10px 5px 0px 0px;
+	position: fixed;
+}
+.header {
+	height:70px;
+	background: #3b3b3b;
+	position: fixed;
+	text-transform: uppercase;
+	top:0px;
+	left:0px;
+	width: 100%;
+	z-index: 9999;
+	width: 100%;
+	font-size: 11px;
+}
+.header a{
+	padding: 0px 10px;
+	letter-spacing:1px;
+	display: block;
+	text-shadow: 0px 1px 1px #fff;
+}
+.header span.right{
+	float: right;
+	padding: 20px;
+}
+.header span.right a{
+	float:left;
+	display: block;
+}
+.content{
+	right: 40px;
+	left: 280px;
+	top: 90px;
+	position: absolute;
+	padding-bottom: 40px;
+
+}
+.content h4{
+	font-size: 60px;
+	padding: 20px 0px 10px 0px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	color: black;
+	text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+}
+.content p{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 30px;
+	color: #000;
+	display:block;
+	background: white;
+	margin-top: 90;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 2px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 2px; /* Firefox */
+    column-rule-width: 2px;
+    -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: lightblue; /* Firefox */
+    column-rule-color: lightblue;
+}
+
+.panel{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-top: -150%;
+	background-color: #fff;
+	opacity: 0;
+	z-index:2;
+	-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition: opacity .6s ease-in-out;
+	-o-transition: opacity .6s ease-in-out;
+	-ms-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;
+}
+
+.panel:target{
+	opacity: 1;
+	margin-top: 0%;
+}
+
+#experience:target ~ #header #navigation #link-experience,
+#projects:target ~ #header #navigation #link-projects,
+#about:target ~ #header #navigation #link-about,
+#contact:target ~ #header #navigation #link-contact{
+	background: #000;
+	color: #fff;
+}
