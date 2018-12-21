@@ -13,3 +13,7 @@ class FreeForm(forms.Form):
                ('f','Saturday'),
                ('g','Sunday'))
     a = forms.MultipleChoiceField(choices=CHOICES, widget=forms.CheckboxSelectMultiple())
+class NewOption(forms.ModelForm):
+    class Meta:
+        model = Option
+        fields = '__all__'

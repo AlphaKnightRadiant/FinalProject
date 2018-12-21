@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from . import forms
+from RyaFree.forms import NewOption
 # Create your views here.
 
 def index(request):
@@ -16,6 +17,20 @@ def Services(request):
 
 def Poll(request):
     return render (request,'RyaFree/poll.html')
+
+def Options(request):
+
+    form = NewOption()
+
+    if request.method == "POST":
+        form = NewOption(request.POST)
+
+        if form.is_valid():
+            form.save(commit=True)
+            return index(request)
+        else:
+            print('Error Form INvalid')
+    return render(request,"RyaFree/poll.html",{'form':form})
 
 def form_name_view(request):
     form = forms.FreeForm()
