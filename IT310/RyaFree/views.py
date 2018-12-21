@@ -4,11 +4,11 @@ from django.http import HttpResponse
 
 def index(request):
     #my_dict = {'insert_me':"Hello , this is from first app index"}
-    return render (request,'RyaFree/InitialDesign.html', args)#context=my_dict)
+    return render (request,'RyaFree/InitialDesign.html')#context=my_dict)
     #return HttpResponse("<em>Are you free?<em>")
 def help(request):
     helpdict = {'help_insert':"Run, help isn't coming."}
     return render(request,'RyaFree/help.html',context =helpdict)
 
 def Services(request):
-    return render (request,'RyaFree/Services.html' , args)
+    return render (request,'RyaFree/Services.html')
