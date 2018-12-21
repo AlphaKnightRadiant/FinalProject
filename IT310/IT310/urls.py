@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('help/',include('RyaFree.urls',)),
     path('Services/',views.Services,name='Services'),
-    path('poll/',views.Options,name="Poll"),
+    path('poll/',views.form_name_view,name="Poll"),
 ]
